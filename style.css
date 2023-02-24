@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+.box {
+	width: 150px;
+	height: 150px;
+	animation: movebox 5s ;
+	animation-iteration-count: infinite;
+}
+
+@keyframes movebox {
+	0% {
+		transform: translateX(10px);
+		background-color: red;
+	}
+
+	25% {
+		transform: translate(10px, 80vh);
+		background-color: blue;
+	} 
+
+	50% {
+		transform: translate(80vw, 80vh);
+		background-color: green;
+	}
+
+	 75% {
+		transform: translate(80vw, 3vh);
+		background-color: yellow;
+	} 
+
+	100% {
+		transform: translateX(10px, 3vh);
+		background-color: red;
+	}
+}
